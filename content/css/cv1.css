@@ -1,0 +1,165 @@
+* {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+html, body, main {
+	height: 100%;	
+}
+
+html {
+	user-select: none;
+}
+
+body {
+	display: table;
+	margin: auto;
+	background-color: cadetblue;
+}
+
+main {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+table {
+	width: 100%;
+	margin: auto;
+	font-family: Cambria;
+	font-size: 15px;
+	border: #2196f373;
+	background: white;
+	counter-reset: numbering;
+}
+caption {
+	font-size: 30px;
+	color: white;
+}
+
+th {
+	max-width: 220px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-align: right;
+	padding: 3px;
+	width: 9%;
+}
+
+td {
+	text-align: left;
+	padding: 3px;
+	font-size: 15px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+img {
+	width: 100px;
+	height: 100px;
+}
+
+abbr {
+	text-decoration: none;
+}
+
+input {
+	border-collapse: 3;
+	border: none;
+	outline: none;
+}
+
+.date input {
+	width: 150px;
+}
+
+.first_tbody td:nth-child(3) {
+	text-align: center;
+}
+
+.first_tbody th::before {
+	counter-increment: numbering;
+	content: counter(numbering) ".";
+	float: left;
+}
+
+.first_tbody th::after {
+	content:":";
+}
+
+.first_tbody th:nth-child(3)::before {
+	content: none;
+	counter-increment: none;
+}
+
+.img {
+	width: 0.1px;
+	height: 0.1px;
+	overflow: hidden;
+}
+
+.second_tbody th {
+	text-align: center;
+	font-family: SimSun;
+	text-decoration-line: none;
+	padding: 2px;
+}
+
+.second_tbody td{
+	text-align: center;
+	font-family: Lucida Calligraphy;
+	padding: 0px;
+}
+
+.second_tbody>tr>th.second_tbody_font {
+	font-family: serif;
+}
+
+.parenthesis:before {
+	content: '\0028';
+}
+
+.parenthesis:after {
+	content: '\0029';
+}
+
+.prime:before {
+	content: '\02B9';
+}
+
+.prime:after {
+	content: '\02B9';
+}
+
+.squarebrecket:before {
+	content: '\005B';
+}
+
+.squarebrecket:after {
+	content: '\005D';
+}
+
+.arrowhead:before {
+	content: '\02C2';
+}
+
+.arrowhead:after {
+	content: '\02C3';
+}
+
+a:link {
+	color: hotpink;
+	text-decoration: none;
+}
+
+a:visited {
+	color: green;
+}
+
+a:hover {
+	color: red;
+}
+
+a:active {
+	color: yellow;
+}
